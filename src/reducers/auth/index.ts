@@ -13,7 +13,7 @@ export interface IAuthState {
 }
 
 const initialState: IAuthState = {
-  token: '',
+  token: localStorage.getItem('alokasi-token') ?? '',
   user: undefined,
 };
 
